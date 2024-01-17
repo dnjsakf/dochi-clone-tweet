@@ -5,11 +5,8 @@ import {useSelectedLayoutSegment} from "next/navigation";
 import Link from "next/link";
 
 export default function NavMenu() {
-  const segment = useSelectedLayoutSegment(); // 현재 최상위 경로
-
-  // const segments = useSelectedLayoutSegments(); // 전체 경로
-  // console.log(segments); // ['compose', 'tweet']
-
+  const segment = useSelectedLayoutSegment();
+  console.log(segment);
   const me = { // 임시로 내 정보 있는것처럼
     id: 'zerohch0'
   }
