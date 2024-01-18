@@ -6,14 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mock": "npx tsx watch ./src/mocks/http.ts"
   },
   "dependencies": {
     "@faker-js/faker": "^8.3.1",
+    "@tanstack/react-query": "^5.17.15",
+    "@tanstack/react-query-devtools": "^5.17.15",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.10",
     "next": "14.0.4",
-    "next-auth": "^5.0.0-beta.4",
+    "next-auth": "^5.0.0-beta.5",
     "react": "^18",
     "react-dom": "^18"
   },

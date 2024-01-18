@@ -19,6 +19,8 @@ export default function LoginModal() {
         username: id,
         password,
         redirect: false,
+        // redirect: true,
+        // callbackUrl : 'http://localhost:3000',
       })
       router.replace('/home');
     } catch (err) {

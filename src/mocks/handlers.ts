@@ -4,11 +4,12 @@ import {faker} from "@faker-js/faker";
 function generateDate() {
   const lastWeek = new Date(Date.now());
   lastWeek.setDate(lastWeek.getDate() - 7);
-  return faker.date.between({
+  return faker.date.between({ // 임의의 날짜 추출
     from: lastWeek,
     to: Date.now(),
   });
 }
+
 const User = [
   {id: 'elonmusk', nickname: 'Elon Musk', image: '/yRsRRjGO.jpg'},
   {id: 'zerohch0', nickname: '제로초', image: '/5Udwvqim.jpg'},
@@ -109,35 +110,35 @@ export const handlers = [
       [
         {
           postId: 1,
-          User: User[0],
+          User: User[2],
           content: `${1} Stop following me. I'm too famous.`,
           Images: [{imageId: 1, link: faker.image.urlLoremFlickr()}],
           createdAt: generateDate(),
         },
         {
           postId: 2,
-          User: User[0],
+          User: User[2],
           content: `${2} Stop following me. I'm too famous.`,
           Images: [{imageId: 1, link: faker.image.urlLoremFlickr()}],
           createdAt: generateDate(),
         },
         {
           postId: 3,
-          User: User[0],
+          User: User[2],
           content: `${3} Stop following me. I'm too famous.`,
           Images: [{imageId: 1, link: faker.image.urlLoremFlickr()}],
           createdAt: generateDate(),
         },
         {
           postId: 4,
-          User: User[0],
+          User: User[2],
           content: `${4} Stop following me. I'm too famous.`,
           Images: [{imageId: 1, link: faker.image.urlLoremFlickr()}],
           createdAt: generateDate(),
         },
         {
           postId: 5,
-          User: User[0],
+          User: User[2],
           content: `${5} Stop following me. I'm too famous.`,
           Images: [{imageId: 1, link: faker.image.urlLoremFlickr()}],
           createdAt: generateDate(),
