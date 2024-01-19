@@ -2,7 +2,7 @@ import style from './search.module.css';
 import BackButton from "@/app/(afterLogin)/_component/BackButton";
 import SearchForm from "@/app/(afterLogin)/_component/SearchForm";
 import Tab from "@/app/(afterLogin)/search/_component/Tab";
-import SearchResult from './_component/SearchResult';
+import SearchResult from "@/app/(afterLogin)/search/_component/SearchResult";
 
 type Props = {
   searchParams: { q: string, f?: string, pf?: string };

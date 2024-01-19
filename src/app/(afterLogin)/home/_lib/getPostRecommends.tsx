@@ -1,7 +1,10 @@
 
+type Props = {
+  pageParam?: number
+}
 
-export async function getPostRecommends() {
-  const res = await fetch(`http://localhost:9090/api/postRecommends`, {
+export async function getPostRecommends({ pageParam }: Props) {
+  const res = await fetch(`http://localhost:9090/api/postRecommends?cursor=${pageParam}`, {
     next: {
       tags: ['posts', 'recommends'], // server의 cache를 refresh 하기 위한 Tag 키, revalidateTag('recommends');
     },
